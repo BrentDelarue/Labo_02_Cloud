@@ -12,18 +12,14 @@ using Newtonsoft.Json;
 
 namespace NMCT.IoTCloud.MyFirstServices
 {
-    public static class Function1
+    public static class TestParameters
     {
-        [FunctionName("Function1")]
-        public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequest req, ILogger log)
+        [FunctionName("TestParameters")]
+        public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "naam/{myname}")]HttpRequest req,string myname, ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
-            string name = req.Query["name"];
-
-            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-            dynamic data = JsonConvert.DeserializeObject(requestBody);
-            name = name ?? data?.name;
+            string name = myname;
 
             return name != null
                 ? (ActionResult)new OkObjectResult($"Hello, {name}")
