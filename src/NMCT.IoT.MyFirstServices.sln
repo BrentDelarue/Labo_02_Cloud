@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMCT.IoTCloud.MyFirstServices", "..\NMCT.IoTCloud.MyFirstServices\NMCT.IoTCloud.MyFirstServices.csproj", "{CDD5E34A-3404-4B4D-A1E1-23A7BD115391}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NMCT.IoTCloud.MyFirstServices", "..\NMCT.IoTCloud.MyFirstServices\NMCT.IoTCloud.MyFirstServices.csproj", "{CDD5E34A-3404-4B4D-A1E1-23A7BD115391}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

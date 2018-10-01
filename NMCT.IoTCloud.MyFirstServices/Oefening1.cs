@@ -15,7 +15,7 @@ namespace NMCT.IoTCloud.MyFirstServices
     public static class Oefening1
     {
         [FunctionName("Oefening1")]
-        public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "rekenmachine/{getal1}/{getal2}")]HttpRequest req, int getal1, int getal2, ILogger log)
+        public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "rekenmachine/som/{getal1}/{getal2}")]HttpRequest req, int getal1, int getal2, ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
@@ -26,7 +26,7 @@ namespace NMCT.IoTCloud.MyFirstServices
             int som = get1 + get2;
 
             return name != null
-                ? (ActionResult)new OkObjectResult($"De som van {get1} en {get2} ={som}")
+                ? (ActionResult)new OkObjectResult($"De som van {get1} en {get2} = {som}")
                 : new BadRequestObjectResult("Please pass two numbers on the query string or in the request body");
         }
     }
