@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMCT.IoTCloud.MyFirstServices", "..\NMCT.IoTCloud.MyFirstServices\NMCT.IoTCloud.MyFirstServices.csproj", "{CDD5E34A-3404-4B4D-A1E1-23A7BD115391}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDD5E34A-3404-4B4D-A1E1-23A7BD115391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD5E34A-3404-4B4D-A1E1-23A7BD115391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD5E34A-3404-4B4D-A1E1-23A7BD115391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD5E34A-3404-4B4D-A1E1-23A7BD115391}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8787C864-E8FB-4C6B-882A-48011F6C725A}
+	EndGlobalSection
+EndGlobal
