@@ -32,7 +32,7 @@ namespace NMCT.IoTCloud.MyFirstServices
                 }
             }
             log.LogInformation($"From:{from} to {to}");
-            return new OkObjectResult("Done");
+            return new OkObjectResult($"From:{from} to {to}");
         }
     }
 }
